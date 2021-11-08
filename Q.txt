@@ -1,0 +1,88 @@
+
+
+Cloud
+Infrastructure as a Service is a category of cloud computing services that
+provides a platform allowing customers to develop, run, and manage
+application functionalities without the complexity of building and
+maintaining the infrastructure.
+True
+False* 
+
+
+IAM
+which do we not attach a IAM Policy to ?
+a. service*   
+b. role    
+c. user   
+d. groups
+
+S3
+Which AWS service has a simple interface that you can use as a drive to store
+and retrieve any amount of data, at any time, from anywhere on the
+web?
+a. EC2   
+b. S3*  
+c. Route 53   
+d. ALB
+
+
+What is included in the types of permissions used for S3 service?
+a. Identity-based  
+b. Resource-based  
+c. Access Control List  
+d. all of the above*
+
+VPC
+NACL rules are evaluated from highest to lowest based on rule number.
+True  
+False*
+
+EC2
+Which of the following is not an element of Custom AMI?
+a. OS and OS configuration   
+b. PAckages /Dependencies  
+c. EBS*   
+d. app configuration 
+
+Elastic IP charges when you are not using and it is free when using.
+True *
+False
+
+ELB
+which statement is not true about ELB?
+a. It is required to launch an EC2 instances*
+b. It is a tool that distributes incoming web traffic
+c. It helps prevent one server from being overloaded
+d. It enables fault-tolerance in applications
+
+Auto Scaling
+Which of the following is not the benefit of auto scaling?
+a. Better fault tolerance 
+b. Better availability
+c. Better Performance *
+d. Better cost management
+
+-Route 53
+One of the following represents a collection of records that can be managed together,
+belonging to a single parent domain name.
+a. Route 53
+b. Hosted zones *
+c. Subnet
+d. IAM policies
+
+-RDS
+Which DB instance type delivers the most throughput?
+a.PostgreSQL
+b.MySQL
+c.Amazon Aurora *
+d.MariaDB
+
+
+SNS&SQS
+Where are messages that can't be delivered due to client errors or server errors
+are held for further analysis or reprocessing?
+
+a. in the dead-letter queue *
+b. in the AWS trash bin
+c. in the SQS delay queue
+d. in the SNS bin

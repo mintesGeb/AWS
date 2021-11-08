@@ -1,0 +1,28 @@
+Domain Registration
+-check availability and register domain name with Route53
+	Route53
+	-creates "hosted zone" with the same name as the domain
+	-assigns a set of four name servers to the "hosted zone"
+-the domain owner info will be sent to registrar
+-domain owner info will be sent to registry (.com,...)
+
+IP addresses lie underneath every Domain name (google.com ... ) to get the right web location.
+-register domain name
+-Route 53 create "hosted zone"
+-creating record sets in hosted zone to route traffic to resources
+{name, type, value}
+or
+create special Route 53 records called alias records that route traffic to s3 buckets
+
+How ? Process.
+1. user enters domain name
+2. request for domain name is routed to a DNS resolver managed by ISP
+3. request is forwarded to DNS root name server
+4. request is forwarded to one of the TLD name servers
+-response: the names of the four Route 53 name servers associated with our domain name
+-the DNS resolver caches the four Route 53 name servers for next use(skipping step 3 and 4) (typically for two days)
+5. DNS resolver choose Route 53 name server and forwards the request for domain name to that name server
+6. Route 53 name server looks in hosted zone with same name as domain name for domain name record and gets associated value such as IP address and returns the IP address to the DNS resolver.
+7. Finally IP address is returned to the browser bt DNS resolver
+8. web browser sends request to the IP of the domain name and the returned content would be a Amazon s3 configured as website endpoint or a web server running on amazone EC2
+9. the web browser displays the page/content
