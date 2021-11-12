@@ -1,0 +1,84 @@
+const AWS = require ("aws-sdk");
+var dynamodb = new AWS.DynamoDB();
+// var dynamodbDoc = new AWS.DynamoDB().DocumentClient;
+const courseTable = process.env.COURSE_TABLE
+
+
+exports.handler =  async(event) => {
+    console.log("Event is  "+JSON.stringify(event))
+    
+    console.log("thecoursecode "+ event.pathParameters.courseCode)
+    
+    const {courseCode, courseName, teacher, students, monthYear} = JSON.parse(event.body)
+    
+//     const saveParams = {
+//  TableName: courseTable,
+//  Item: {
+//  "courseCode": {
+//  S: courseCode
+//  },
+//  "courseName": {
+//  S: courseName
+//  },
+//  "teacherName": {
+//  S: teacher
+//  },
+//  "students": {
+//  SS: students
+//  },
+//  "monthYear": {
+//  S: monthYear
+//  },
+//  "dateInserted":{S:Math.floor(new Date().getTime()/1000)+""}
+//  }
+//  };
+
+//  await dynamodb.putItem(saveParams).promise();
+//-----
+//  var params = {
+//   Key: {
+//     "courseCode": {
+//  S: "CS516"
+//  }
+//   }, 
+//   TableName: courseTable
+//  };
+//  dynamodb.getItem(params, function(err, data) {
+//   if (err) console.log(err, err.stack);
+//   else     console.log(data);         
+//  });
+    //------
+    
+    
+//     let params = {
+//         TableName: courseTable
+//     }
+    
+//     dynamodb.scan(params, function(err, data) {
+//   if (err) console.log(err, err.stack); // an error occurred
+//   else     console.log(data); })
+    
+    // ------
+    
+    // let params ={
+    //     ExpressionAttributeValues:{
+    //         ":v1":{
+    //             S: "Unubold"
+    //         }
+    //     },
+    //     KeyConditionExpression:"teacherName = :v1",
+    //     TableName: courseTable
+    // }
+    // dynamodb.query(params, function (err,data){
+    //     if (err) console.log(err, err.stack); 
+    //     else     console.log(data); 
+    // })
+    
+    
+    // TODO implement
+    const response = {
+        statusCode: 200,
+        body: JSON.stringify('success!'),
+    };
+    return response;
+};
