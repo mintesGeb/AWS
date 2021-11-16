@@ -1,0 +1,36 @@
+Lambda
+Which statement is true about Lambda?
+
+Lambda lets us run code if we manage our servers
+We are not charged for requests but only when your app is not used.
+Our code runs in parallel and processes each trigger individually, scaling precisely with the size of the workload.  *
+AWS Lambda stores code in Amazon EC2 
+
+DynamoDB
+Which non-relational data model is used typically for social networking, recommendation engines and fraud detection?
+key-Value
+Graph
+Document
+In-memory
+
+Cloud watch
+Each of the separate source of logs in CloudWatch Logs makes up a separate ______.
+log group
+alarm
+insufficient data
+log stream
+
+
+API Gateway
+Which of the following doesnt belong to the benefits of API Gateway?
+SDK Generation 
+API Lifecycle Management
+Storing request body in applicable JSON format *
+AWS Authorization
+
+Cognito
+Which of the following is a type of token that are not intended to carry information about the user?
+Access token *
+ID token
+Refresh token
+Risk-Free token
